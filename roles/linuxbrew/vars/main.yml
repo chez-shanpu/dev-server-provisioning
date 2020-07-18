@@ -1,0 +1,10 @@
+brew_tools:
+  - kubectl
+  - kubectx
+  - ghq
+  - peco
+  - tmux
+  - exa
+  - bat
+  - fd
+  - ripgrep

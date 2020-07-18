@@ -1,0 +1,25 @@
+---
+- hosts: local
+  connection: local
+  strategy: linear
+  roles:
+    - name: common
+      tags: common
+
+    - name: dotfiles
+      tags: dotfiles
+
+    - name: fish
+      tags: fish
+
+    - name: language
+      tags: language
+
+    - name: docker
+      tags: docker
+
+    - name: editor
+      tags: editor
+
+    - name: linuxbrew
+      tags: linuxbrew

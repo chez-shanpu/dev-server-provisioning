@@ -1,0 +1,13 @@
+---
+- name: git clone my dotfiles
+  git:
+    repo: https://github.com/chez-shanpu/dotfiles
+    dest: '{{ dotfiles_path }}'
+    force: yes
+  changed_when: false
+
+- name: Run provision.sh
+  shell: ./provision.sh
+  args:
+    chdir: '{{ dotfiles_path }}'
+  changed_when: false

@@ -1,0 +1,22 @@
+---
+- block:
+    - name: Apt update
+      become: yes
+      apt:
+        update_cache: yes
+      changed_when: false
+
+    - name: Upgrade all packages to the latest version
+      become: yes
+      apt:
+        upgrade: safe
+      changed_when: false
+
+    - name: Install packages
+      become: yes
+      apt:
+        name: '{{ apt_packages }}'
+        autoclean: yes
+        autoremove: yes
+
+  tags: apt_install
