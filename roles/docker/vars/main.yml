@@ -8,4 +8,6 @@ docker_dependences:
 
 docker_apt_packages:
   - docker-ce
+  - docker-ce-cli
+  - containerd.io
   - docker-compose
