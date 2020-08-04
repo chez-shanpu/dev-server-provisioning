@@ -4,6 +4,19 @@
     name: neovim
 
 - block:
+  - name: Add node repository
+    become: yes
+    shell: curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+
+  - name: Install nodejs
+    become: yes
+    apt:
+      name: nodejs
+      autoclean: yes
+      autoremove: yes
+      update_cache: yes
+
+- block:
     - name: Create nvim config dir
       file:
         path: ~/.config/nvim
