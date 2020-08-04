@@ -24,4 +24,6 @@
     - name: editor
       tags: editor
 
+    - name: tmux
+      tags: tmux
     

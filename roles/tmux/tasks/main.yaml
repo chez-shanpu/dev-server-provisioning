@@ -1,0 +1,11 @@
+---
+- name: Install tmux
+  homebrew:
+    name: tmux
+
+- name: Install tmux powerline pip dependencies
+  pip:
+    name: "{{ item }}"
+  loop:
+    - powerline-status
+    - psutil
