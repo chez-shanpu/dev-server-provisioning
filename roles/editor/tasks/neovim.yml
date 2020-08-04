@@ -1,25 +1,7 @@
 ---
-- block:
-    - name: Install neovim-dependence
-      become: yes
-      apt:
-        name: software-properties-common
-        update_cache: yes
-        autoclean: yes
-        autoremove: yes
-
-    - name: Install neovim
-      become: yes
-      apt:
-        name: '{{ item }}'
-        update_cache: yes
-        autoclean: yes
-        autoremove: yes
-      with_items:
-        - neovim
-        - python3-neovim
-
-  tags: neovim_install
+- name: Install neovim
+  homebrew:
+    name: neovim
 
 - block:
     - name: Create nvim config dir

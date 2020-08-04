@@ -9,3 +9,4 @@ brew_tools:
   - fd
   - ripgrep
   - go
+  - nvim
