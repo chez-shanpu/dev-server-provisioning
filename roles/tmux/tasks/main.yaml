@@ -6,6 +6,7 @@
 - name: Install tmux powerline pip dependencies
   pip:
     name: "{{ item }}"
+    executable: pip3
   loop:
     - powerline-status
     - psutil
