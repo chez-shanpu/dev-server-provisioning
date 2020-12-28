@@ -6,6 +6,9 @@
     - name: common
       tags: common
 
+    - name: linuxbrew
+      tags: linuxbrew
+
     - name: dotfiles
       tags: dotfiles
 
@@ -17,9 +20,6 @@
 
     - name: docker
       tags: docker
-    
-    - name: linuxbrew
-      tags: linuxbrew
     
     - name: editor
       tags: editor

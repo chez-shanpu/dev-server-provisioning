@@ -6,3 +6,5 @@ apt_packages:
   - python3-pip
   - make
   - build-essential
+  - python-is-python3
+  - trash-cli
