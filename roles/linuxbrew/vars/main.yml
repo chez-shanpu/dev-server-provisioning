@@ -1,11 +1,11 @@
 brew_tools:
-  - kubectl
-  - kubectx
+  - bat
+  - direnv
+  - duf
+  - exa
+  - fd
+  - gh
   - ghq
   - peco
-  - exa
-  - bat
-  - fd
   - ripgrep
-  - go
-  - nvim
+  - tmux

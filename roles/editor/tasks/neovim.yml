@@ -40,29 +40,3 @@
 
   tags: dein_install
 
-- block:
-    - name: Put "dein.toml" to nvim-config
-      file:
-        src: '{{ dotfiles_path }}/.config/nvim/dein.toml'
-        dest: ~/.config/nvim/dein.toml
-        state: link
-        force: yes
-      changed_when: false
-
-    - name: Put "dein_lazy.toml" to nvim-config
-      file:
-        src: '{{ dotfiles_path }}/.config/nvim/dein_lazy.toml'
-        dest: ~/.config/nvim/dein_lazy.toml
-        state: link
-        force: yes
-      changed_when: false
-
-    - name: Put "init.vim" to nvim-config
-      file:
-        src: '{{ dotfiles_path }}/.config/nvim/init.vim'
-        dest: ~/.config/nvim/init.vim
-        state: link
-        force: yes
-      changed_when: false
-
-  tags: neovim_configfiles_put

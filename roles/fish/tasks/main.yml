@@ -1,19 +1,7 @@
 ---
-- block:
-    - name: Add fish repository
-      apt_repository:
-        repo: ppa:fish-shell/release-3
-        update_cache: yes
-      become: yes
-
-    - name: Install "fish"
-      become: yes
-      apt:
-        name: fish
-        autoclean: yes
-        autoremove: yes
-
-  tags: fish_install
+- name: Install fish by brew
+  homebrew:
+    name: 'fish'
 
 - block:
     - name: Obtain path to fish
