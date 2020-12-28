@@ -1,7 +1,6 @@
 brew_tools:
   - bat
   - direnv
-  - duf
   - exa
   - fd
   - gh
@@ -9,3 +8,6 @@ brew_tools:
   - peco
   - ripgrep
   - tmux
+
+brew_tools_from_source: 
+  - duf

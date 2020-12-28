@@ -8,3 +8,8 @@
 - name: Install tools by brew
   homebrew:
     name: '{{ brew_tools }}'
+
+- name: Install tools by brew --build-from-source
+  homebrew:
+    name: '{{ brew_tools_from_source }}'
+    install_options: build-from-source 
