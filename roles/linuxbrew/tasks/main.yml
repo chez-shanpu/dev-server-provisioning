@@ -5,6 +5,15 @@
     executable: /bin/bash
   changed_when: false
 
+- name: Add linuxbrew bin path to .bashrc
+  lineinfile:
+    path: ~/.bashrc
+    line: PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
+
+- name: reload bash
+  shell: source ~/.bashrc
+  changed_when: false
+
 - name: Install tools by brew
   homebrew:
     name: '{{ brew_tools }}'
@@ -14,7 +23,3 @@
     name: '{{ brew_tools_from_source }}'
     install_options: build-from-source 
 
-- name: Add linuxbrew bin path to .bashrc
-  lineinfile:
-    path: ~/.bashrc
-    line: PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
