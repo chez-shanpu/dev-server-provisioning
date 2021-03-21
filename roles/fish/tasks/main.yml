@@ -60,7 +60,7 @@
       changed_when: false
 
     - name: Install fish plugins
-      shell: fisher
+      shell: fisher update
       changed_when: false
 
     - name: reflect config.fish
