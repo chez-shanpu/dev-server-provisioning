@@ -6,14 +6,14 @@
     - name: common
       tags: common
 
+    - name: dotfiles
+      tags: dotfiles
+
     - name: language
       tags: language
 
     - name: linuxbrew
       tags: linuxbrew
-
-    - name: dotfiles
-      tags: dotfiles
 
     - name: fish
       tags: fish
