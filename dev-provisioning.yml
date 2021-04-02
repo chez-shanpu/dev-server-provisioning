@@ -9,14 +9,14 @@
     - name: dotfiles
       tags: dotfiles
 
-    - name: language
-      tags: language
-
     - name: linuxbrew
       tags: linuxbrew
 
     - name: fish
       tags: fish
+
+    - name: language
+      tags: language
 
     - name: docker
       tags: docker
