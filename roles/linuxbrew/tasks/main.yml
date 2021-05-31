@@ -10,8 +10,8 @@
     path: ~/.bashrc
     line: PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
 
-- name: reload bash
-  shell: source ~/.bashrc
+- name: reload shell
+  shell: exec $SHELL -l 
   changed_when: false
 
 - name: Install tools by brew
